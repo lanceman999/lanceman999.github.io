@@ -1,2 +1,5 @@
 # lanceman999.github.io
-Hello! My name is Lance O'Connor, I am a first year PhD student at Johns Hopkins University in the Biology department
+
+Please find the link to my personal website on the right side of the the screen. This website contains my broad interests in biological research, work that I have done including publications, as well as more information on who I am as an individual!
+
+Cheers!
