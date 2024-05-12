@@ -18,6 +18,18 @@
 			#header {
 				background-color: tan; /* Change to desired color */
 				padding: 20px; /* Adjust padding as needed */
+				position: relative; /* Ensure pseudo-element is positioned relative to the header */
+			}
+			
+			/* CSS to underline the entire width of the header */
+			#header::after {
+				content: ''; /* Create a pseudo-element */
+				display: block;
+				border-bottom: 1px solid black; /* Apply the underline */
+				width: 100%; /* Make it extend across the entire width of the container */
+				position: absolute; /* Position the underline relative to the header */
+				bottom: 0; /* Align the underline to the bottom of the header */
+				left: 0; /* Ensure the underline starts from the left edge of the header */
 			}
 		</style>
 	</head>
@@ -27,7 +39,7 @@
 		<section id="header">
 			<header>
 				<!-- Your profile picture -->
-                    		<span class="image avatar">
+				<span class="image avatar">
 					<a href="https://imgur.com/JaFzqCp">
 						<img src="https://i.imgur.com/JaFzqCp.jpg" alt="Lance O'Connor" title="source: imgur.com" style="width: 350px; height: auto;" />
 					</a>
