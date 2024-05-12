@@ -7,18 +7,18 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/your-icon.png">
 		<style>
-			/* CSS to underline the h1 element */
-			#logo {
-				text-decoration: underline;
-				width: 100%; /* Makes the underline extend across the entire width of the screen */
-				display: block; /* Ensures the width property works */
-			}
-			
 			/* CSS for lavender-colored background */
 			#header {
 				background-color: tan; /* Change to desired color */
 				padding: 20px; /* Adjust padding as needed */
 				position: relative; /* Ensure pseudo-element is positioned relative to the header */
+			}
+			
+			/* CSS for lavender-colored background behind name and photo */
+			#header .profile-info {
+				background-color: lavender; /* Change to desired color */
+				padding: 20px; /* Adjust padding as needed */
+				display: inline-block; /* Ensure the background only spans the width of content */
 			}
 			
 			/* CSS to underline the entire width of the header */
@@ -38,17 +38,20 @@
 		<!-- Header -->
 		<section id="header">
 			<header>
-				<!-- Your profile picture -->
-				<span class="image avatar">
-					<a href="https://imgur.com/JaFzqCp">
-						<img src="https://i.imgur.com/JaFzqCp.jpg" alt="Lance O'Connor" title="source: imgur.com" style="width: 350px; height: auto;" />
-					</a>
-				</span>	
-				<!-- Your name and title/role -->
-				<h1 id="logo">LANCE M. O'CONNOR</h1>
+				<!-- Your profile picture and name -->
+				<div class="profile-info">
+					<span class="image avatar">
+						<a href="https://imgur.com/JaFzqCp">
+							<img src="https://i.imgur.com/JaFzqCp.jpg" alt="Lance O'Connor" title="source: imgur.com" style="width: 350px; height: auto;" />
+						</a>
+					</span>	
+					<!-- Your name and title/role -->
+					<h1 id="logo">LANCE M. O'CONNOR</h1>
+				</div>
+				<!-- Additional information -->
 				<p>PhD Student<br />
 				<a href="#">Dr. XXXX XXX Laboratory</a><br />
-                    		Department of Biology, Johns Hopkins University</p>
+				Department of Biology, Johns Hopkins University</p>
 			</header>
 			<nav id="nav">
 				<ul>
